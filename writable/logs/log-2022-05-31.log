@@ -1,0 +1,218 @@
+ERROR - 2022-05-31 01:20:43 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2022-05-31 01:20:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+#0 F:\laragon\www\plucommerce\system\Database\BaseConnection.php(570): CodeIgniter\Database\BaseConnection->initialize()
+#1 F:\laragon\www\plucommerce\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 F:\laragon\www\plucommerce\app\Models\Produk_model.php(40): CodeIgniter\Database\BaseBuilder->get()
+#3 F:\laragon\www\plucommerce\app\Controllers\Userhome.php(15): App\Models\Produk_model->getProdukHome()
+#4 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\Userhome->index()
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userhome))
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2022-05-31 01:22:48 --> Table 'plucommerce.tb_produk' doesn't exist
+CRITICAL - 2022-05-31 01:22:48 --> Table 'plucommerce.tb_produk' doesn't exist
+#0 F:\laragon\www\plucommerce\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 F:\laragon\www\plucommerce\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\laragon\www\plucommerce\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\laragon\www\plucommerce\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\laragon\www\plucommerce\app\Models\Produk_model.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\laragon\www\plucommerce\app\Controllers\Userhome.php(15): App\Models\Produk_model->getProdukHome()
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\Userhome->index()
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userhome))
+#8 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-31 01:26:18 --> Invalid file: admin/v_pengguna.php
+#0 F:\laragon\www\plucommerce\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_penggun...')
+#1 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_penggun...', Array, true)
+#2 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(19): view('admin/v_penggun...')
+#3 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->index()
+#4 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-31 01:27:39 --> Undefined property: App\Controllers\admin\Users::$mproduk
+#0 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\laragon\\www\\...', 20, Array)
+#1 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->index()
+#2 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#3 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-31 01:28:24 --> Invalid file: admin/v_pengguna.php
+#0 F:\laragon\www\plucommerce\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/v_penggun...')
+#1 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_penggun...', Array, true)
+#2 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(24): view('admin/v_penggun...', Array)
+#3 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->index()
+#4 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-31 01:35:27 --> Undefined variable: title
+#0 F:\laragon\www\plucommerce\app\Views\template\t_admin.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 138, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\View\View.php(230): CodeIgniter\View\View->render('template/t_admi...', Array, true)
+#4 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_tambahu...', Array, true)
+#5 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(30): view('admin/v_tambahu...', Array)
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formtambah()
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#8 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-31 01:36:07 --> syntax error, unexpected 'return' (T_RETURN)
+#0 F:\laragon\www\plucommerce\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('admin/users/for...')
+#1 F:\laragon\www\plucommerce\system\CodeIgniter.php(702): CodeIgniter\Router\Router->handle('admin/users/for...')
+#2 F:\laragon\www\plucommerce\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-31 01:42:33 --> Undefined variable: validataion
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_tambahusers.php(18): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 18, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_tambahu...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(33): view('admin/v_tambahu...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formtambah()
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-31 01:44:27 --> Table 'plucommerce.tb_produk' doesn't exist
+CRITICAL - 2022-05-31 01:44:27 --> Table 'plucommerce.tb_produk' doesn't exist
+#0 F:\laragon\www\plucommerce\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT *\nFROM `...')
+#1 F:\laragon\www\plucommerce\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\laragon\www\plucommerce\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\laragon\www\plucommerce\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\laragon\www\plucommerce\app\Models\Produk_model.php(40): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\laragon\www\plucommerce\app\Controllers\Userhome.php(15): App\Models\Produk_model->getProdukHome()
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\Userhome->index()
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Userhome))
+#8 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-31 01:57:24 --> Undefined index: nohp
+#0 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(44): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\laragon\\www\\...', 44, Array)
+#1 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->tambah()
+#2 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#3 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-31 01:57:43 --> Undefined index: gambar_produk
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_users.php(36): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'F:\\laragon\\www\\...', 36, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_users', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(24): view('admin/v_users', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->index()
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 01:59:37 --> Undefined variable: pr
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_users.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 39, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_users', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(24): view('admin/v_users', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->index()
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 01:59:38 --> Undefined variable: pr
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_users.php(39): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 39, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_users', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(24): view('admin/v_users', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->index()
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 04:37:57 --> Undefined variable: title
+#0 F:\laragon\www\plucommerce\app\Views\template\t_admin.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 138, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\View\View.php(230): CodeIgniter\View\View->render('template/t_admi...', Array, true)
+#4 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#5 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(64): view('admin/v_edituse...', Array)
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('1')
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#8 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-05-31 04:38:13 --> syntax error, unexpected ''req'' (T_CONSTANT_ENCAPSED_STRING), expecting ']'
+#0 F:\laragon\www\plucommerce\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('admin/users/for...')
+#1 F:\laragon\www\plucommerce\system\CodeIgniter.php(702): CodeIgniter\Router\Router->handle('admin/users/for...')
+#2 F:\laragon\www\plucommerce\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-31 04:38:25 --> Trying to access array offset on value of type null
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_editusers.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'F:\\laragon\\www\\...', 12, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(65): view('admin/v_edituse...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('images', 'fevicon.png')
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 04:39:41 --> Trying to access array offset on value of type null
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_editusers.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'F:\\laragon\\www\\...', 12, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(65): view('admin/v_edituse...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('images', 'fevicon.png')
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 04:41:23 --> Trying to access array offset on value of type null
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_editusers.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'F:\\laragon\\www\\...', 12, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(65): view('admin/v_edituse...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('images', 'fevicon.png')
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 04:43:15 --> Trying to access array offset on value of type null
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_editusers.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'F:\\laragon\\www\\...', 12, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(68): view('admin/v_edituse...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('images', 'fevicon.png')
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 04:44:11 --> Trying to access array offset on value of type null
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_editusers.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'F:\\laragon\\www\\...', 12, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(68): view('admin/v_edituse...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('images', 'fevicon.png')
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-31 04:44:17 --> Trying to access array offset on value of type null
+#0 F:\laragon\www\plucommerce\app\Views\admin\v_editusers.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'F:\\laragon\\www\\...', 12, Array)
+#1 F:\laragon\www\plucommerce\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\plucommerce\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\plucommerce\system\Common.php(1092): CodeIgniter\View\View->render('admin/v_edituse...', Array, true)
+#4 F:\laragon\www\plucommerce\app\Controllers\admin\Users.php(68): view('admin/v_edituse...', Array)
+#5 F:\laragon\www\plucommerce\system\CodeIgniter.php(802): App\Controllers\admin\Users->formedit('images', 'fevicon.png')
+#6 F:\laragon\www\plucommerce\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Users))
+#7 F:\laragon\www\plucommerce\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\plucommerce\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

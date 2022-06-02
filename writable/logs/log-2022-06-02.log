@@ -1,0 +1,111 @@
+CRITICAL - 2022-06-02 02:29:49 --> Class 'App\Models\M_produk' not found
+#0 F:\laragon\www\toko\system\CodeIgniter.php(780): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#1 F:\laragon\www\toko\system\CodeIgniter.php(390): CodeIgniter\CodeIgniter->createController()
+#2 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-06-02 02:30:08 --> Undefined property: App\Controllers\Users::$musers
+#0 F:\laragon\www\toko\app\Controllers\Users.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\laragon\\www\\...', 21, Array)
+#1 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Users->index()
+#2 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 02:31:31 --> Undefined property: App\Controllers\Users::$musers
+#0 F:\laragon\www\toko\app\Controllers\Users.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\laragon\\www\\...', 21, Array)
+#1 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Users->index()
+#2 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 02:31:38 --> Invalid file: v_home.php
+#0 F:\laragon\www\toko\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_home.php')
+#1 F:\laragon\www\toko\system\Common.php(1092): CodeIgniter\View\View->render('v_home', Array, true)
+#2 F:\laragon\www\toko\app\Controllers\Home.php(11): view('v_home')
+#3 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#4 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-06-02 02:53:06 --> syntax error, unexpected ';', expecting ']'
+#0 F:\laragon\www\toko\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('Home')
+#1 F:\laragon\www\toko\system\CodeIgniter.php(702): CodeIgniter\Router\Router->handle('Home')
+#2 F:\laragon\www\toko\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 02:53:31 --> syntax error, unexpected 'return' (T_RETURN)
+#0 F:\laragon\www\toko\system\Router\Router.php(160): CodeIgniter\Router\Router->autoRoute('Home')
+#1 F:\laragon\www\toko\system\CodeIgniter.php(702): CodeIgniter\Router\Router->handle('Home')
+#2 F:\laragon\www\toko\system\CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 03:04:26 --> Undefined variable: row
+#0 F:\laragon\www\toko\app\Views\v_home.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 23, Array)
+#1 F:\laragon\www\toko\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\toko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\toko\system\Common.php(1092): CodeIgniter\View\View->render('v_home', Array, true)
+#4 F:\laragon\www\toko\app\Controllers\Home.php(14): view('v_home')
+#5 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->index()
+#6 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-02 03:06:01 --> Undefined variable: row
+#0 F:\laragon\www\toko\app\Views\v_tambah.php(23): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'F:\\laragon\\www\\...', 23, Array)
+#1 F:\laragon\www\toko\system\View\View.php(214): include('F:\\laragon\\www\\...')
+#2 F:\laragon\www\toko\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 F:\laragon\www\toko\system\Common.php(1092): CodeIgniter\View\View->render('v_tambah', Array, true)
+#4 F:\laragon\www\toko\app\Controllers\Home.php(19): view('v_tambah')
+#5 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->formtambah()
+#6 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-06-02 03:32:34 --> Undefined property: App\Controllers\Home::$req
+#0 F:\laragon\www\toko\app\Controllers\Home.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\laragon\\www\\...', 56, Array)
+#1 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->update()
+#2 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 03:32:43 --> Undefined property: App\Controllers\Home::$mrekap
+#0 F:\laragon\www\toko\app\Controllers\Home.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'F:\\laragon\\www\\...', 65, Array)
+#1 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->update()
+#2 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-06-02 03:33:06 --> Unknown column 'created_at' in 'field list'
+CRITICAL - 2022-06-02 03:33:06 --> Unknown column 'created_at' in 'field list'
+#0 F:\laragon\www\toko\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `re...')
+#1 F:\laragon\www\toko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 F:\laragon\www\toko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 F:\laragon\www\toko\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 F:\laragon\www\toko\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\laragon\www\toko\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 F:\laragon\www\toko\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\laragon\www\toko\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 F:\laragon\www\toko\app\Controllers\Home.php(65): CodeIgniter\BaseModel->save(Array)
+#9 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->update()
+#10 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-06-02 03:33:10 --> Unknown column 'created_at' in 'field list'
+CRITICAL - 2022-06-02 03:33:10 --> Unknown column 'created_at' in 'field list'
+#0 F:\laragon\www\toko\system\Database\MySQLi\Connection.php(280): mysqli->query('INSERT INTO `re...')
+#1 F:\laragon\www\toko\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 F:\laragon\www\toko\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 F:\laragon\www\toko\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', Array, false)
+#4 F:\laragon\www\toko\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 F:\laragon\www\toko\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 F:\laragon\www\toko\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 F:\laragon\www\toko\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 F:\laragon\www\toko\app\Controllers\Home.php(65): CodeIgniter\BaseModel->save(Array)
+#9 F:\laragon\www\toko\system\CodeIgniter.php(802): App\Controllers\Home->update()
+#10 F:\laragon\www\toko\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#11 F:\laragon\www\toko\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 F:\laragon\www\toko\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
